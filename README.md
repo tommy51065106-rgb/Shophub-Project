@@ -97,17 +97,9 @@ Orders and payments:
 
 ## Getting Started
 
-### Option A: Run from repository root (recommended)
+Run from repository root:
 
 ```bash
-npm run install:app
-npm start
-```
-
-### Option B: Run inside inner app folder
-
-```bash
-cd IERG4210
 npm install
 npm start
 ```
@@ -118,16 +110,14 @@ Default app URL: `http://localhost:3000`
 
 ## Scripts
 
-Inside `IERG4210/package.json`:
+Inside `package.json`:
 
 - `npm start`: Start Express server on port 3000 (auto-opens browser)
-- `npm run start:dev`: Start React dev server on port 3000
+- `npm run start:dev`: Start React development server on port 3000
 - `npm run build`: Build React production assets
 - `npm run server`: Alias of `npm start`
 - `npm run kill:3000`: Force-kill any process bound to port 3000
 - `npm test`: Run React test command
-
-Repository root contains wrapper scripts so `npm start` works from root as well.
 
 ## Environment Variables
 
