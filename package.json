@@ -1,0 +1,15 @@
+{
+  "name": "shophub-workspace",
+  "private": true,
+  "description": "Workspace wrapper scripts for ShopHub",
+  "scripts": {
+    "install:app": "npm --prefix IERG4210 install",
+    "start": "npm --silent run kill:3000 && npm --prefix IERG4210 --silent run server",
+    "start:dev": "npm --silent run kill:3000 && npm --prefix IERG4210 --silent run start:dev",
+    "start:clean": "npm run start",
+    "build": "npm --prefix IERG4210 --silent run build",
+    "server": "npm run start",
+    "kill:3000": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$ErrorActionPreference='SilentlyContinue'; $port=3000; $conns=Get-NetTCPConnection -LocalPort $port -State Listen; if(-not $conns){exit 0}; $ids=$conns | Select-Object -ExpandProperty OwningProcess -Unique; foreach($id in $ids){ Stop-Process -Id $id -Force }\"",
+    "test": "npm --prefix IERG4210 --silent run test"
+  }
+}

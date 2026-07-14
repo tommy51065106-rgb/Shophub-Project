@@ -1,0 +1,14 @@
+# Root-level sensitive docs
+AI Declaration and adminaccount.txt
+
+# Workspace local settings
+.npmrc
+
+# Keep inner app responsible for most ignores
+IERG4210/.env
+IERG4210/.env.*
+!IERG4210/.env.example
+IERG4210/data/*.db
+IERG4210/data/*.sqlite
+IERG4210/data/*.sqlite3
+IERG4210/uploads/**

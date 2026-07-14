@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Manage Products</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/admin.css" />
+</head>
+<body>
+  <main class="main-content">
+    <div class="admin-container">
+      <h1>Products</h1>
+      <form id="prodForm" enctype="multipart/form-data" autocomplete="off">
+        <input type="hidden" name="pid" />
+        <input type="hidden" name="_csrf" id="csrfHidden" value="" />
+        <label>Category: <select name="catid"></select></label>
+        <label>Name: <input name="name" type="text" required maxlength="200" title="1–200 characters" /></label>
+        <label>Price: <input name="price" type="number" step="0.01" min="0" max="99999999" required /></label>
+        <label>Description: <textarea name="description" maxlength="8000" rows="4"></textarea></label>
+        <div id="existingImages"></div>
+        <div id="imageDropZone" class="image-drop-zone" tabindex="0" role="button" aria-label="Drop product images here or click to browse">
+          Drop image files here
+          <div id="imageDropHint" class="image-drop-hint">Drag images into this box (preview 160x160) or click to browse</div>
+        </div>
+        <div id="droppedImagePreview" class="dropped-image-preview" aria-live="polite"></div>
+        <label>Images: <input name="images" type="file" accept="image/*" multiple /></label>
+        <button type="submit" id="saveBtn" class="btn-primary">Save</button>
+        <button type="button" id="createBtn" class="btn-secondary">Create New</button>
+      </form>
+
+      <h2 style="margin-top:1rem">Existing</h2>
+      <ul id="list"></ul>
+    </div>
+  </main>
+
+  <script src="/admin-client/admin-common.js"></script>
+  <script src="/admin-client/admin-products.js?v=20260510b"></script>
+</body>
+</html>

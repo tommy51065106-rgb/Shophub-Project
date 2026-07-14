@@ -1,0 +1,159 @@
+/* Home Page Styles */
+.home-page {
+    flex: 1;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+/* Products Grid - Tableless Layout using Flexbox */
+.products-section {
+    margin-bottom: 3rem;
+}
+
+.social-section {
+    margin: 2rem 0 3rem;
+    padding: 1rem 1rem 1.25rem;
+    border: 1px solid #e3e8ef;
+    border-radius: 12px;
+    background: #f9fbff;
+}
+
+.social-description {
+    margin: 0 0 1rem;
+    color: #4a5568;
+}
+
+.meta-plugin-frame {
+    width: 100%;
+    max-width: 360px;
+    height: 520px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.meta-share-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #1877f2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.meta-share-link:hover {
+    text-decoration: underline;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+
+    .meta-plugin-frame {
+        max-width: 100%;
+        height: 460px;
+    }
+
+    .products-grid {
+        justify-content: center;
+    }
+
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        gap: 1rem;
+    }
+}
+
+.page-container {
+    max-width: 520px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.auth-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #333;
+}
+
+.auth-form input {
+    margin-top: 0.3rem;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    margin-top: 0.8rem;
+    background: #3498db;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.65rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background: #2980b9;
+}
+
+.error-text {
+    color: #c0392b;
+    margin-top: 0.75rem;
+    font-weight: 600;
+}
+

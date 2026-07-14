@@ -1,0 +1,36 @@
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+    background-color: white;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.breadcrumb-nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumb-nav a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb-nav a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    color: #999;
+    margin: 0 0.5rem;
+}
+
+.breadcrumb-current {
+    color: #666;
+}

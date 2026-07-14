@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>View Orders</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/admin.css" />
+</head>
+<body>
+  <main class="main-content">
+    <div class="admin-container">
+      <h1>Orders</h1>
+      <p class="admin-note">Displays order items and latest payment status.</p>
+      <table class="admin-table" id="ordersTable">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>ShopHub Account</th>
+            <th>Stripe Payer Email</th>
+            <th>Products</th>
+            <th>Order Total</th>
+            <th>Payment Status</th>
+            <th>Paid Info</th>
+            <th>Created At</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="/admin-client/admin-common.js"></script>
+  <script src="/admin-client/admin-orders.js"></script>
+</body>
+</html>
