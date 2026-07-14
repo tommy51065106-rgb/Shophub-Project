@@ -1,5 +1,5 @@
 # Root-level sensitive docs
-AI Declaration and adminaccount.txt
+*adminaccount*.txt
 
 # Workspace local settings
 .npmrc
